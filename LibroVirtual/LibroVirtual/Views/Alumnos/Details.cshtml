@@ -1,0 +1,78 @@
+﻿@model LibroVirtual.Models.Alumno
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alumno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApellidoPaterno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApellidoPaterno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApellidoMaterno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApellidoMaterno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rut)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rut)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comuna)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comuna)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Procedencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Procedencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EnObservacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EnObservacion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
